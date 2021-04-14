@@ -13,7 +13,7 @@ Return the answer in an array.
 
 
 
-// My solution 
+// My solution - 92ms
 
 var smallerNumbersThanCurrent = function(nums) {
     let array = []
