@@ -36,3 +36,18 @@ const kidsWithCandies = (candies, extraCandies) => {
   // One liner
 
   const kidsWithCandies = (candies, extraCandies, max = Math.max(...candies)) => candies.map(candy => candy + extraCandies >= max);
+
+
+var kidsWithCandies = function(candies, extraCandies) {
+    // finding the largest number
+    let max = -1;
+    for (let i = 0; i < candies.length; i++) {
+        if (candies[i] > max) max = candies[i]
+    }
+    
+    for (let i = 0; i < candies.length; i++) {
+        candies[i] = candies[i] + extraCandies >= max
+    }
+    
+    return candies;
+};
