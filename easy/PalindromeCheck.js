@@ -30,3 +30,4 @@ function isPalindrome(string) {
       
       return reverse === string
   }
+

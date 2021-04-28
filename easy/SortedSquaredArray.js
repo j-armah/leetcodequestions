@@ -37,3 +37,23 @@ function sortedSquaredArray(array) {
 
 // AE solution
 
+function sortedSquaredArray(array) {
+    // Write your code here.
+      const sortedSquares = new Array(array.length).fill(0)
+      let left = 0
+      let right = array.length - 1
+      
+      for(let idx = array.length - 1; idx >= 0; idx--) {
+          const leftVal = array[left]
+          const rightVal = array[right]
+          
+          if(Math.abs(leftVal) > Math.abs(rightVal)) {
+              sortedSquares[idx] = leftVal ** 2
+              left++
+          } else {
+              sortedSquares[idx] = rightVal ** 2
+              right--
+          }
+      }
+      return sortedSquares
+  }
