@@ -31,6 +31,7 @@ Given a string sentence containing only lowercase English letters, return true i
 };
 
 // Using set
+// No .split() needed as Set takes in interables
 
 var checkIfPangram = function(sentence) {
     return new Set(sentence.split("")).size == 26;
