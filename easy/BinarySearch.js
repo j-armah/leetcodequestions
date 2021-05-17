@@ -1,5 +1,5 @@
 /*
-
+https://www.algoexpert.io/questions/Binary%20Search
 */
 
 function binarySearch(array, target) {
